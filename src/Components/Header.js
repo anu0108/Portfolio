@@ -45,7 +45,7 @@ const Header = () =>{
     )}
 
     {isClicked && (<div className="dropdown-menu">
-                <Link to="/"  className="nav-links" > HOME </Link>
+                <Link to="/"  className="nav-links" id ="home"> HOME </Link>
                 <Link to="/about"  className="nav-links"> ABOUT </Link>
                 <Link to="/projects"  className="nav-links"> PROJECTS </Link>
                 <Link to="/resume"  className="nav-links"> RESUME </Link>

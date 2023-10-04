@@ -1,5 +1,5 @@
-import "../Styles/contact.css";
 import email from "../Images/email.webp"
+import "../Styles/contact.css";
 import { Link } from "react-router-dom";
 
 
