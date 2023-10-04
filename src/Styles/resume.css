@@ -1,0 +1,28 @@
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.my-resume{
+    padding-bottom: 50px;
+}
+
+.downloadButton{
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    color:black;
+    border: 1px solid white; 
+    text-decoration: none;
+    background-color:#ffc95a ;
+    font-weight:400;
+}
+
+.downloadButton:hover{
+    transition: all 0.5s;
+    background-color: #ffffff;
+    font-weight:600;
+}

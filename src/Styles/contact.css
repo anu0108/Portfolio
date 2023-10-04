@@ -1,0 +1,135 @@
+.contact-container{
+    display: flex;
+    height: 100vh;
+}
+
+.mail{
+    width: 420px;
+    margin-top:110px ;
+    margin-left: 130px;
+    margin-bottom: 150px;
+}
+
+.contact{
+    width: 650px;
+    margin-left: 150px;
+    margin-top: 150px;
+    margin-right: 10px;
+}
+
+.contact h1{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact p{
+    color: white;
+    margin-top: 40px;
+    line-height: 1.7;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contact button{
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    color:black;
+    border: 1px solid white; 
+    text-decoration: none;
+    background-color:#ffc95a ;
+}
+
+.contact button:hover{
+    transition: all 0.5s;
+    background-color: #ffffff;
+    font-weight:800;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-email{
+    margin-right:10px;
+    font-weight: 600;
+}
+.contact-linkedIn{
+    margin-left:10px;
+    font-weight: 600;
+
+}
+
+b{
+    color: #ffc95a;
+}
+
+@media (max-width:1120px){
+    .mail{
+        width:340px;
+        height: 340px;
+        margin-top: 150px;
+        margin-left: 85px;
+    }
+    .contact p{
+        font-size: 22px;
+    }
+
+    .contact{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width:935px){
+    .mail{
+        width:270px;
+        height:270px;
+        margin-top: 200px;
+    }
+    .contact{
+        margin-left:70px;
+    }
+
+    .contact p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:808px){
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mail{
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .contact{
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contact{
+        width: 500px;
+    }
+
+    .contact p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:555px){
+    .contact{
+        width: 365px;
+    }
+    .contact p{
+        font-size: 16px;
+    }
+}
