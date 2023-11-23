@@ -1,6 +1,8 @@
 import "../Styles/skills.css";
 import {motion} from "framer-motion"
 import { IconContext } from 'react-icons'
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
 import {IoLogoJavascript, IoLogoReact, IoLogoNodejs,IoLogoCss3, IoLogoHtml5} from "react-icons/io5"
 import {SiExpress, SiVisualstudio, SiCplusplus,SiMongodb} from "react-icons/si"
 import {FaBootstrap, FaGitAlt, FaGithub, FaFigma, FaNpm} from "react-icons/fa"
@@ -17,10 +19,12 @@ const Skills = () => {
         transition={{ duration: 1 }}
       >
         <IconContext.Provider value={{ className: "skill-cards" }}>
+          <TbBrandNextjs title="NextJS" />
           <IoLogoReact title="ReactJS" />
           <IoLogoNodejs title="NodeJS" />
           <SiExpress title="ExpressJS" />
           <SiMongodb title="MongoDB" />
+          <BiLogoTypescript title="TypeScript" />
           <IoLogoJavascript title="JavaScript" />
           <SiCplusplus title="C++" />
           <FaGitAlt title="Git" />
@@ -38,3 +42,4 @@ const Skills = () => {
 };
 
 export default Skills;
+ 

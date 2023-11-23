@@ -25,6 +25,7 @@
   position: sticky;
   height: 25px;
   z-index: 10;
+  padding-top: 10px;
 }
 
 .header {
@@ -106,5 +107,15 @@
 
   .dropdown-menu .nav-links{
     margin-bottom: 8px;
+  }
+}
+
+
+@media (min-width:1300px){
+  .logo{
+    padding-left: 50px;
+  }
+  .nav-menu{
+    padding-right:50px
   }
 }
