@@ -1,4 +1,6 @@
 import "../Styles/projects.css";
+import { motion } from "framer-motion";
+
 
 const ProjectCard = ({ projectName, projectImage }) => {
   const info = {
@@ -21,9 +23,15 @@ const ProjectCard = ({ projectName, projectImage }) => {
 
   return (
     <div className="project-card">
-      <div className="image-container">
+      <motion.div
+      whileHover={{ opacity: 1, scale: 1.1 }} // Adjust properties for hover effect
+      initial={{ opacity: 0 }} // Initial opacity before hover
+      animate={{ opacity: 1 }} // Animation when not hovered
+      transition={{ duration: 0.5 }} // Adjust animation duration
+       className="image-container"
+      >
         <img className="project-image" src={projectImage} alt="projectImage" />
-      </div>
+      </motion.div>
 
       <div className="project-info">
         <h3>{projectName}</h3>
