@@ -1,79 +1,84 @@
-.about-container{
-    display: flex;
+.about-container {
+  display: flex;
 }
 
-.developer-yogi{
-    width: 480px;
-    margin-left: 80px;
+.developer-yogi {
+  width: 480px;
+  margin-left: 80px;
 }
 
-.about-text{
-    margin-left: 20px;
-    margin-top: 45px;
-    color: white;
-    width: 780px;
-    margin-right: 20px;
+.about-text {
+  margin-left: 20px;
+  margin-top: 45px;
+  color: white;
+  width: 780px;
+  margin-right: 20px;
 }
 
-.about-text h2{
-    text-align: center;
+.about-text h2 {
+  text-align: center;
 }
 
-#para1{
-    margin-top: 10px;
+#para1 {
+  margin-top: 10px;
 }
 
-.about-text p{
-    line-height: 1.6;
-    font-size: 20px;
-    font-weight: 400;
+.about-text p {
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-b{
-    color: #ffc95a;
+.about-text a {
+  text-decoration: none;
 }
 
-@media (min-width:855px) and (max-width:955px){
-    .developer-yogi{
-        margin-left: 60px;
-    }
+b {
+  color: #ffc95a;
+  text-decoration: none;
 }
 
-@media (max-width:855px){
-    .about-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .skills-container{
-        margin: 2px 11%;
-    }
-
-    .developer-yogi{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .about-text{
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 610px;
-        font-size: 18px;
-    }
+@media (min-width: 855px) and (max-width: 955px) {
+  .developer-yogi {
+    margin-left: 60px;
+  }
 }
 
-@media (max-width:655px){
-    .about-text{
-        margin-left:8px;
-        margin-right: 8px;
-        width:430px
-    }
+@media (max-width: 855px) {
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-container {
+    margin: 2px 11%;
+  }
+
+  .developer-yogi {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .about-text {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 610px;
+    font-size: 18px;
+  }
 }
 
-@media (max-width : 460px){
-    .about-text{
-        margin-left:8px;
-        margin-right: 8px;
-        width:365px
-    }
+@media (max-width: 655px) {
+  .about-text {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 430px;
+  }
+}
+
+@media (max-width: 460px) {
+  .about-text {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 365px;
+  }
 }

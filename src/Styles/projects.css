@@ -1,19 +1,19 @@
-b{
-    color: #ffc95a;
+b {
+  color: #ffc95a;
 }
 
-
-.projects-section{
-    color: white;
-    margin-top: 70px;
+.projects-section {
+  color: white;
+  margin-top: 70px;
 }
 
-.projects-section h1,.projects-section h4{
-    text-align: center;
+.projects-section h1,
+.projects-section h4 {
+  text-align: center;
 }
 
-.project-links:after{
-    background: none repeat scroll 0 0 transparent;
+.project-links:after {
+  background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   display: block;
@@ -25,68 +25,64 @@ b{
   width: 0;
 }
 
-.project-links:hover:after { 
-    width: 95%; 
-    left: 0; 
-    margin: 0 auto;
-  }
-.projects{
-    display: flex;
+.project-links:hover:after {
+  width: 95%;
+  left: 0;
+  margin: 0 auto;
+}
+.projects {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 45px 0%;
 }
 
-.image-container{
-    width: 100%;
-    height: 196px;
-    display: flex;
-    background-color: rgba(245, 245, 245, 0.266);
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden; /* Ensures border-radius is applied correctly */
+.image-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-color: rgba(245, 245, 245, 0.266);
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures border-radius is applied correctly */
 }
 
-.project-card{
-    width: 350px;
-    margin: 0px 25px 50px 25px;
+.project-card {
+  width: 400px;
+  margin: 0px 25px 50px 25px;
 }
 
-.project-image{
-    /* border-radius:  20px 20px 0 0; */
-    width: 100%;
-    /* background-color: hsl(0, 0%, 90%); */
+.project-image {
+  width: 100%;
 }
 
-.project-text{
-    height: 100%;
-    margin-bottom: 8px;
-    /* margin: 0 8px; */
+.project-text {
+  height: 100%;
+  margin-bottom: 8px;
+  /* margin: 0 8px; */
 }
 
-
-.project-links{
-    text-decoration: none;
-    position: relative;
-    color:white;
-    margin-right: 10px;
+.project-links {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  margin-right: 10px;
 }
 
-@media (max-width:1218px){
-    .project-card{
-        width:320px ;
-    }
-    .project-image{
-        width:320px
-    }
-    
+@media (max-width: 1218px) {
+  .project-card {
+    width: 320px;
+  }
+  .project-image {
+    width: 320px;
+  }
 }
 
-@media (max-width:763px){
-    .project-card{
-        width:290px ;
-    }
-    .project-image{
-        width:290px
-    }
+@media (max-width: 763px) {
+  .project-card {
+    width: 290px;
+  }
+  .project-image {
+    width: 290px;
+  }
 }
