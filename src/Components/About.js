@@ -16,24 +16,27 @@ const About = () => {
         <div className="about-text">
           <h2>Learn About Me</h2>
           <p id="para1">
-            I'm a final year college student pursuing <b>B.Tech in CSE</b> from
-            New Delhi, India. With a strong love for web development, I
-            specialize in the <b>MERN stack</b>, showcasing a keen understanding
-            of data structures, algorithms, and robust problem-solving skills.
+            I'm a <b>B.Tech graduate in CSE</b> from New Delhi, India. With a
+            strong love for web development, I specialize in the{" "}
+            <b>MERN stack</b>, showcasing a keen understanding of data
+            structures, algorithms, and robust problem-solving skills.
           </p>
 
           <p>
-            My tech journey pivoted during my <b>internship</b> as a front-end
-            developer at Bharat Heavy Electricals Limited, Delhi. It was here
-            that I refined my skills, gained real-world experience and enhanced
-            my ability to create flawless user interfaces.
+            I have over 8 months of industry internship experience. I am
+            currently working with{" "}
+            <a href="https://www.linkedin.com/company/techjockey/mycompany/">
+              <b>Techjockey</b>
+            </a>
+            , the world's first online Software-Store that helps you compare and
+            choose the right software for your needs.
           </p>
 
           <p>
-            I also undertook an internship at
-            <Link href="https://www.linkedin.com/company/fitverse-fit/">
+            I've also worked with a funded startup
+            <a href="https://www.linkedin.com/company/fitverse-fit/">
               <b> Fitverse</b>
-            </Link>
+            </a>
             , where I played a key role in developing their UI and their
             software Gravity. This experience further diversified my skill set
             and exposed me to different facets of the industry.
