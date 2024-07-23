@@ -137,4 +137,34 @@ ul {
   .joblist-job-company {
     font-size: 22px;
   }
+
+  .MuiTypography-root{
+    margin-top: 25px !important;
+  }
 }
+
+.heading-experience{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1240px) {
+  .joblist-job-title {
+    font-size: 24px;
+  }
+  .joblist-job-company {
+    font-size: 24px;
+  }
+  #experience {
+    margin:2rem 10%
+  }
+}
+
+@media (max-width: 890px) {
+  #experience .MuiTab-root {
+    padding: 6px 3px;
+    font-size: 1px;
+  }
+}
+

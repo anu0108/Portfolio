@@ -83,28 +83,32 @@ const JobList = () => {
 
   const experienceItems = {
     Techjockey: {
-      jobTitle: "Software Developer Apprentice @",
-      duration: "FEB 2024 - PRESENT",
-      desc: [
-        "Led development of end-to-end region build automation across Route 53 (AWS's DNS web service).  This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
-        "Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers.",
-      ],
-    },
-    Fitverse: {
-      jobTitle: "Software Development Engineer Intern @",
-      duration: "OCT 2023 - DEC 2023",
-      desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
-      ],
-    },
+    jobTitle: "Software Developer Apprentice @",
+    duration: "FEB 2024 - PRESENT",
+    desc: [
+      "Migrated Vendor-CRM's codebase to ReactJS, enhancing frontend functionality and user experience.",
+      "Developed an Orders Punching System generating Proforma Invoices, storing them in AWS S3.",
+      "Implemented a hierarchical approval workflow for PIs, improving order management efficiency.",
+      "Implemented JWT authentication mechanism in the backend, ensuring secure access and data protection.",
+      "Crafted the manage panel section, meticulously handling roles and permissions of end users.",
+    ],
+  },
+  Fitverse: {
+    jobTitle: "Software Development Engineer Intern @",
+    duration: "OCT 2023 - DEC 2023",
+    desc: [
+      "Developed 15+ UI components in Next.js, based on Figma designs and resolved diverse UI-related bugs to enhance the overall user experience.",
+      "Conducted & optimized API calls, significantly boosting application performance.",
+      "Contributed to enhancing Gravity, an Electron.js-based enterprise software for gym owners and Fitverse's core group.",
+      "Attained in-depth insight into an enterprise-level product's functionality within the Agile development.",
+    ],
+  },
     BHEL: {
       jobTitle: "Industrial Trainee @",
       duration: "AUG 2022 - SEPT 2022",
       desc: [
-        "Developed and researched an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-        " Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik.",
+        "Worked on the Intranet website of BHEL(Industry sector, Delhi) to enhance user experience and functionality.",
+        "Redesigned and developed an existing website using HTML,CSS and JavaScript.",
       ],
     },
   };

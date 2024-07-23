@@ -4,7 +4,7 @@ b {
 
 .projects-section {
   color: white;
-  margin-top: 70px;
+  margin-top: 160px;
 }
 
 .projects-section h1,
@@ -76,6 +76,9 @@ b {
   .project-image {
     width: 320px;
   }
+  .projects-section {
+    margin-top: 280px;
+  }
 }
 
 @media (max-width: 763px) {
@@ -84,5 +87,15 @@ b {
   }
   .project-image {
     width: 290px;
+  }
+  .projects-section {
+    margin-top: 440px;
+  }
+}
+
+@media (max-width: 590px) {
+ 
+  .projects-section {
+    margin-top: 0px;
   }
 }
