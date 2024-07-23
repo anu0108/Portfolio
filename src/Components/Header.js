@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../Styles/header.css";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [headerblur, setHeaderblur] = useState(false);
@@ -30,30 +31,24 @@ const Header = () => {
           ANURAG
         </Link>
         <div className="nav-menu">
-          <a href="#" className="nav-links">
-            {" "}
-            HOME{" "}
-          </a>
-          <a href="#about" className="nav-links">
-            {" "}
-            ABOUT{" "}
-          </a>
-          <a href="#experience" className="nav-links">
-            {" "}
-            EXPERIENCE{" "}
-          </a>
-          <a href="#projects" className="nav-links">
-            {" "}
-            PROJECTS{" "}
-          </a>
+        <HashLink smooth to="/#" className="nav-links">
+            HOME
+          </HashLink>
+          <HashLink smooth to="/#about" className="nav-links">
+            ABOUT
+          </HashLink>
+          <HashLink smooth to="/#experience" className="nav-links">
+            EXPERIENCE
+          </HashLink>
+          <HashLink smooth to="/#projects" className="nav-links">
+            PROJECTS
+          </HashLink>
           <Link to="/resume" className="nav-links">
-            {" "}
-            RESUME{" "}
+            RESUME
           </Link>
-          <Link to="/contact" className="nav-links">
-            {" "}
-            CONTACT{" "}
-          </Link>
+          <HashLink smooth to="/#contact" className="nav-links">
+            CONTACT
+          </HashLink>
         </div>
         {!isClicked && (
           <IoReorderThreeOutline className="menuIcon" onClick={HandleClick} />

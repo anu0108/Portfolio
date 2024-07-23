@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
+import { styled } from '@mui/material/styles';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import FadeInSection from "./FadeInSection";
 
 const isHorizontal = window.innerWidth < 600;
@@ -65,20 +65,31 @@ function a11yProps(index) {
   }
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: "theme.palette.background.paper",
-    display: "flex",
-    height: 300,
-  },
-  tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`,
-  },
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//     backgroundColor: "theme.palette.background.paper",
+//     display: "flex",
+//     height: 300,
+//   },
+//   tabs: {
+//     borderRight: `1px solid ${theme.palette.divider}`,
+//   },
+// }));
+
+const Root = styled('div')(({ theme }) => ({
+  flexGrow: 1,
+  backgroundColor: theme.palette.background.paper,
+  display: 'flex',
+  height: 300,
+}));
+
+const CustomTabs = styled(Tabs)(({ theme }) => ({
+  borderRight: `1px solid ${theme.palette.divider}`,
 }));
 
 const JobList = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
@@ -118,20 +129,52 @@ const JobList = () => {
   };
 
   return (
-    <div className={classes.root}>
-      <Tabs
-        orientation={!isHorizontal ? "vertical" : null}
+    // <div className={classes.root}>
+    //   <Tabs
+    //     orientation={!isHorizontal ? "vertical" : null}
+    //     variant={isHorizontal ? "fullWidth" : "scrollable"}
+    //     value={value}
+    //     onChange={handleChange}
+    //     className={classes.tabs}
+    //   >
+    //     {Object.keys(experienceItems).map((key, i) => (
+    //       <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} />
+    //     ))}
+    //   </Tabs>
+    //   {Object.keys(experienceItems).map((key, i) => (
+    //     <TabPanel value={value} index={i}>
+    //       <span className="joblist-job-title">
+    //         {experienceItems[key]["jobTitle"] + " "}
+    //       </span>
+    //       <span className="joblist-job-company">{key}</span>
+    //       <div className="joblist-duration">
+    //         {experienceItems[key]["duration"]}
+    //       </div>
+    //       <ul className="job-description">
+    //         {experienceItems[key]["desc"].map(function (descItem, i) {
+    //           return (
+    //             <FadeInSection delay={`${i + 1}00ms`}>
+    //               <li key={i}>{descItem}</li>
+    //             </FadeInSection>
+    //           );
+    //         })}
+    //       </ul>
+    //     </TabPanel>
+    //   ))}
+    // </div>
+    <Root>
+      <CustomTabs
+        orientation={!isHorizontal ? "vertical" : "horizontal"}
         variant={isHorizontal ? "fullWidth" : "scrollable"}
         value={value}
         onChange={handleChange}
-        className={classes.tabs}
       >
         {Object.keys(experienceItems).map((key, i) => (
-          <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} />
+          <Tab key={i} label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} />
         ))}
-      </Tabs>
+      </CustomTabs>
       {Object.keys(experienceItems).map((key, i) => (
-        <TabPanel value={value} index={i}>
+        <TabPanel key={i} value={value} index={i}>
           <span className="joblist-job-title">
             {experienceItems[key]["jobTitle"] + " "}
           </span>
@@ -140,17 +183,15 @@ const JobList = () => {
             {experienceItems[key]["duration"]}
           </div>
           <ul className="job-description">
-            {experienceItems[key]["desc"].map(function (descItem, i) {
-              return (
-                <FadeInSection delay={`${i + 1}00ms`}>
-                  <li key={i}>{descItem}</li>
-                </FadeInSection>
-              );
-            })}
+            {experienceItems[key]["desc"].map((descItem, j) => (
+              <FadeInSection key={j} delay={`${j + 1}00ms`}>
+                <li>{descItem}</li>
+              </FadeInSection>
+            ))}
           </ul>
         </TabPanel>
       ))}
-    </div>
+    </Root>
   );
 };
 
