@@ -6,19 +6,33 @@ import Resume from "./Components/Resume";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
+import Experience from "./Components/Experience";
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/resume" element={<Resume/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <About />
+              <Experience />
+              <Projects />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/Resume" element={<Resume />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/experience" element={} /> */}
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

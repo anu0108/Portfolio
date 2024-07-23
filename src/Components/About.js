@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <>
+    <div id="about">
       <div className="about-container">
         <Lottie
           className="developer-yogi"
@@ -57,7 +57,7 @@ const About = () => {
         </div>
       </div>
       <Skills />
-    </>
+    </div>
   );
 };
 

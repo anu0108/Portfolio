@@ -62,11 +62,10 @@
     text-align: center;
   }
 
-  .typing-effect{
+  .typing-effect {
     text-align: center;
   }
 
-  
   .portfolio-container {
     flex-direction: column;
     justify-content: center;
@@ -85,6 +84,6 @@
   }
   .content {
     margin-top: 0;
-    width:370px
+    width: 370px;
   }
 }

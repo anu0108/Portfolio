@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import ResumePDF from "../AnuragWadhwa_2020-2024.pdf";
+import ResumePDF from "../AnuragWadhwa_2020-24.pdf";
 import { BsDownload } from "react-icons/bs";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
