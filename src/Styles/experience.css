@@ -164,10 +164,34 @@ ul {
 @media (max-width: 890px) {
   #experience .MuiTab-root {
     padding: 6px 3px;
-    font-size: 1px;
+    font-size: 10px;
   }
 }
 
 .css-zqwq3{
   background-color: black !important;
+}
+
+@media(min-width:500px){
+  .css-lloy3c-MuiTabs-root{
+    width: 170px;
+  }
+}
+
+@media(max-width:610px){
+  .css-zqwq3{
+    flex-direction: column;
+  }
+  .css-lloy3c-MuiTabs-root{
+    min-height: 140px;
+  }
+  .joblist-job-title,.joblist-job-company{
+    font-size: 20px;
+  }
+  .joblist-duration{
+    font-size: 14px;
+  }
+  .job-description li{
+    font-size: 16px;
+  }
 }
