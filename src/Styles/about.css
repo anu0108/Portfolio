@@ -73,6 +73,9 @@ b {
     margin-right: 8px;
     width: 430px;
   }
+  .developer-yogi{
+    width: 380px;
+  }
 }
 
 @media (max-width: 460px) {

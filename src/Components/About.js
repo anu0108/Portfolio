@@ -2,7 +2,6 @@ import "../Styles/about.css";
 import Lottie from "lottie-react";
 import Developer_Yogi from "../LottieFiles/Developer_Yogi.json";
 import Skills from "./Skills";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -23,13 +22,11 @@ const About = () => {
           </p>
 
           <p>
-            I have over 8 months of industry internship experience. I am
-            currently working with{" "}
+            I have over 11 months of industry internship experience. I recently completed my tenure at{" "}
             <a href="https://www.linkedin.com/company/techjockey/mycompany/">
               <b>Techjockey</b>
             </a>
-            , the world's first online Software-Store that helps you compare and
-            choose the right software for your needs.
+            {" "}(the world's first online software store that helps you compare and choose the right software for your needs) as a Full Stack Software Developer.
           </p>
 
           <p>
